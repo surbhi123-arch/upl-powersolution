@@ -215,7 +215,8 @@ header{
 }
 
 .logo img{
-    width:90px;
+    width: 120px;
+    height: auto;
 }
 
 .tagline{
@@ -288,4 +289,136 @@ header{
     padding:15px;
     text-align:center;
     font-size:18px;
+}
+
+
+
+
+
+@media (max-width:768px){
+
+.page-banner{
+    width:100%;
+    padding:110px 20px 50px;
+    text-align:center;
+    box-sizing:border-box;
+}
+
+.page-banner h1{
+    font-size:32px;
+    margin:0;
+}
+
+.page-banner p{
+    margin-top:10px;
+}
+
+}
+
+
+
+@media (max-width:768px){
+
+.contact-page{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.contact-info,
+.contact-form{
+    width:100%;
+}
+
+}
+
+
+
+@media (max-width:768px){
+
+.mission{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:40px 20px;
+}
+
+.mission-box{
+    width:100%;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.why-card{
+    width:100%;
+}
+
+}
+
+
+
+@media (max-width:768px){
+
+.about-page{
+    flex-direction:column;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.about-image img{
+    width:100%;
+    max-width:350px;
+}
+
+.about-content{
+    width:100%;
+}
+
+}
+
+
+
+
+@media (max-width:768px){
+
+.products-page{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:30px 20px;
+}
+
+.product-card img{
+    height:220px;
+    object-fit:contain;
+}
+
+}
+
+
+
+
+
+@media (max-width:768px){
+
+.contact-page{
+    display:flex;
+    flex-direction:column;
+    padding:40px 20px;
+}
+
+.contact-info,
+.contact-form{
+    width:100%;
+}
+
+.map iframe{
+    width:100%;
+    height:300px;
+}
+
 }
