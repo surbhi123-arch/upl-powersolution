@@ -754,21 +754,24 @@ grid-template-columns:1fr;
 /*=======css========*/
 
 .page-banner{
-height:40vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("../images/ab3.png");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-color:white;
-text-align:center;
+    height:35vh;
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:#fff;
+    text-align:center;
+    padding:20px;
 }
 
 .page-banner h1{
-font-size:48px;
-margin-bottom:10px;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.page-banner p{
+    font-size:18px;
 }
 
 .about-page{
@@ -1201,32 +1204,19 @@ margin-bottom:20px;
 
 /* Solar Products */
 
-.solar-products{
-    padding:70px 8%;
-    background:#fff;
-    text-align:center;
-}
-
-.solar-products h2{
-    font-size:38px;
-    color:#111;
-    margin-bottom:40px;
-}
-
 .solar-container{
-    display:flex;
-    justify-content:center;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
     gap:25px;
-    flex-wrap:nowrap;
+    margin-top:40px;
 }
 
 .solar-card{
-    width:23%;
-    background:#f9f5f5;
+    background:#fff;
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,0.12);
-    transition:0.3s;
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+    transition:.3s;
 }
 
 .solar-card:hover{
@@ -1235,14 +1225,13 @@ margin-bottom:20px;
 
 .solar-card img{
     width:100%;
-    height:230px;
+    height:260px;
     object-fit:contain;
     padding:15px;
-    background:#8b8686;
 }
 
 .solar-card h3{
     padding:15px;
-    color:#d40000;
-    font-size:22px;
+    text-align:center;
+    font-size:18px;
 }
